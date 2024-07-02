@@ -20,14 +20,14 @@ pasword: voidlinux
 
 2. To start the installation fire:
 ```
-$ void-installer
+void-installer
 ```
 
 3. And follow the on-screen instruction:
 - After configuring the network you can use the following commands to install additional software
 ```
-$ xbps-install   # to install/update packages
-$ xbps-query     # to query for package info
+xbps-install   # to install/update packages
+xbps-query     # to query for package info
 ```
 >[!TIP]
 > But really how to use this instructions after you issue `void-installer`?!  
@@ -46,7 +46,8 @@ because BIOS can deal with both GPT and MBR while UEFI can only work with GPT
 ```
 void-live login:root
 pasword:voidlinux
-$ void-installer
+
+void-installer
 ```
 
 2. Set your system keyboard:
