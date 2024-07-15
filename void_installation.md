@@ -30,9 +30,9 @@ xbps-install   # to install/update packages
 xbps-query     # to query for package info
 ```
 >[!TIP]
-> But really how to use this instructions after you issue `void-installer`?!  
-> Well, if you don't have additional laptop/PC, just hit `Ctrl + Alt + F2` or `F3` to open new `tty` terminal,  
-> now you can hack things, download `git` or a browser like `links` or my best browser `w3m`, that uses `vi` keys.  
+> But really how to use this instructions after you issue `void-installer`?!<br>
+> Well, if you don't have additional laptop/PC, just hit `Ctrl + Alt + F2` or `F3` to open new `tty` terminal,<br>
+> now you can hack things, download `git` or a browser like `links` or my best browser `w3m`, that uses `vi` keys.<br>
 > So far so good, now you can back to the `void-installer` by hitting `Ctrl + Alt + F1`,
 > and keep switching between the `void-installer` and your `tty` to follow the instructions.
 
@@ -63,8 +63,8 @@ void-installer   # to start installation
 5. Mirror to select XBPS mirror:
 - select the default mirror `repo-default.voidlinux.org` which can point to any Tier 1.
 >[!NOTE]
-> Tier 1 mirrors are maintained by the Void Linux Infrastructure Team and will always have the latest packages available!.  
-> Tier 2 mirrors are not managed by Void, so they not always fresh and up-to-date,  
+> Tier 1 mirrors are maintained by the Void Linux Infrastructure Team and will always have the latest packages available!.<br>
+> Tier 2 mirrors are not managed by Void, so they not always fresh and up-to-date,<br>
 > but they may work, however the mirrors list in `/etc/xbps.d/`.
 
 6. Hostname:
@@ -89,7 +89,7 @@ void-installer   # to start installation
     *  [ ] floppy:8 -> I don't need this
     *  [x] audio:12
     *  [x] video:13
-    *  [ ] cdrom:16 -> I don't need this too 
+    *  [ ] cdrom:16 -> I don't need this too<br>
     * leave the reset as they are, or do what you want !!
 
 11. BootLoader: Set disk to install `bootloader`
@@ -106,25 +106,25 @@ void-installer   # to start installation
 > and don't touch it in the next section `13.FileSystems`
 > 2. If you don't want to use `Zram`, then create `swap` partition  of size `1G` up-to `4G`,
 > it's should be double of your `RAM` size, but `4G` is enough and try using `Zram` it's the best.
-> 3. Finally if you have an other disk for `home` or not use the entire free space of type `Linux filesystem` for the root `/` 
+> 3. Finally if you have an other disk for `home` or not use the entire free space of type `Linux filesystem` for the root `/`<br>
 > or do what you want !!.
 > If you use `cfdick` then hit `write` and type `yes` and hit `quit`
 
 13. FileSystems: Configure filesystemes and mount points
-- If you follow the above instructions then you'll end with something like this:  
-    \---------------------------------------  
-    `/dev/sda1 Size:1M;fstype:none`  
-    `/dev/sda2 Size:2G;fstype:none`  
-    `/dev/sda3 Size:90G;fstype:none`   
-    \---------------------------------------  
-- Let's formatting and mouting the partitions: 
+- If you follow the above instructions then you'll end with something like this:<br>
+    \---------------------------------------<br>
+    `/dev/sda1 Size:1M;fstype:none`<br>
+    `/dev/sda2 Size:2G;fstype:none`<br>
+    `/dev/sda3 Size:90G;fstype:none`<br>
+    \---------------------------------------<br>
+- Let's formatting and mouting the partitions:<br>
   * `/dev/sda1 Size:1M;fstype:none`
-      + Leave it and let the system do the job, or modify it as you wish. 
+      + Leave it and let the system do the job, or modify it as you wish.<br>
   * `/dev/sda2 Size:2G;fstype:none`
       + `<change>` to `swap  Linux swap`  hit `<yse>`
   * `/dev/sda3 Size:90G;fstype:none`
-      + `<change>` to `ext4  Linux ext4 (journal)` hit `<Ok>` and type `/` for mounting point, and hit `<Ok>`  
-      if you have an other disk for `home`, then you can mount it here as `/home`. 
+      + `<change>` to `ext4  Linux ext4 (journal)` hit `<Ok>` and type `/` for mounting point, and hit `<Ok>`<br>
+      if you have an other disk for `home`, then you can mount it here as `/home`.<br>
 
 14. Install: Start installation with saved settings
 - Hit `<Ok>` and hit `Yes` of course. That's it, now you have `Void Linux` installed `(>^.^<)`.
